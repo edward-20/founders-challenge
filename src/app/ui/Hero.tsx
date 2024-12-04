@@ -18,14 +18,14 @@ export default function Hero() {
   }
   return (
     <div className="flex flex-row justify-center items-center">
-      <div className="w-3/4 md:w-1/2 border-solid flex flex-row mt-12 gap-4">
+      <div className="w-3/4 md:w-1/2 border-solid flex flex-row justify-center md:justify-start mt-12 gap-4">
         <div className="h-[70vh] flex flex-col justify-center items-center w-1/2">
           <h1 className="text-4xl">
             Verify health professionals instantly
           </h1>
           <p className="mt-4">Automate the verification of documents provided by health professional candidates and determine your new employees quicker</p>
         </div>
-        <div className="h-[70vh] m-20">
+        <div className="h-[70vh] m-20 md:block hidden">
 
           <div onMouseEnter={handleMouseEnter(1)} className={clsx(
             "absolute transition-opacity bg-slate-700 p-1 rounded-md transform -translate-x-20 rotate-6",
