@@ -2,5 +2,5 @@
   <!-- Rounded square -->
   <rect x="10" y="10" width="180" height="180" rx="20" ry="20" fill="lightblue" stroke="black" stroke-width="5" />
   <!-- Text (Hv) -->
-  <text x="50%" y="50%" font-family="Arial" font-size="60" fill="black" text-anchor="middle" alignment-baseline="central">Hv</text>
+  <text x="50%" y="50%" font-family="Arial" font-size="60" fill="black" text-anchor="middle" alignment-baseline="central">Mdv</text>
 </svg>

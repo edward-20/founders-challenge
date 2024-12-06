@@ -16,11 +16,11 @@ export default function NavBar ({links} : NavBarLinks) {
         <div className="flex flex-row justify-between items-center w-3/4 md:w-1/2 gap-5">
           <div className="flex flex-row no-wrap items-center gap-3">
             <Image src="logo.svg" alt="logo" width={100} height={100} className="lg:block hidden"/>
-            <h1 className="sm:text-xl md:text-4xl">HealthVet</h1>
+            <h1 className="sm:text-xl md:text-4xl">Medova</h1>
           </div>
           <div className="flex flex-row gap-6">
             {links.map(link => 
-              <Link key={link.name} href={`${link.name}`} className="grow-0">
+              <Link key={link.name} href={`${link.link}`} className="grow-0">
                 <h1>{link.name}</h1>
               </Link>
             )}
