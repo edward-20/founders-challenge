@@ -1,4 +1,6 @@
 import Image from "next/image"
+import { login } from './actions'
+
 function Separator() {
   return (
     <div className="flex items-center text-center before:content-[''] before:flex-1 before:border-b before:border-solid before:border-black after:content-[''] after:flex-1 after:border-b after:border-black after:border-solid before:mr-1 after:ml-1 my-7">
@@ -13,7 +15,7 @@ export default function Login() {
       <div className="w-100 md:px-20 flex items-center">
         <div className="p-12">
           <h1 className="text-3xl mb-4 font-bold">Login</h1>
-          <form action="">
+          <form action={login}>
             <label htmlFor="email" className="block mb-1">Email</label>
             <input placeholder="johnsmith@email.com" id="email" type="email" className="border-solid border-2 rounded-lg mb-4 p-2"/>
             <label htmlFor="password" className="block mb-1">Password</label>
