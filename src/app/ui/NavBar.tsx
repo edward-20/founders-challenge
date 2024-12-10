@@ -21,7 +21,7 @@ export default function NavBar ({links} : NavBarLinks) {
           <div className="flex flex-row gap-6">
             {links.map(link => 
               <Link key={link.name} href={`${link.link}`} className="grow-0">
-                <h1>{link.name}</h1>
+                {link.name}
               </Link>
             )}
           </div>

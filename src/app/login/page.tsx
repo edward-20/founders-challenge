@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from 'next/link'
 import { login } from './actions'
 
 function Separator() {
@@ -23,7 +24,7 @@ export default function Login() {
             <div className="flex flex-row gap-2 items-center">
               <button type="submit" className="border-solid border-2 border-slate-400 w-100 transition:all duration-300 hover:bg-slate-400 rounded-sm p-2">Submit</button>
               <p>or</p>
-              <button className="block border-solid border-2 border-slate-400 transition:all bg-stone-400 duration-300 hover:bg-slate-400 rounded-sm p-2">Signup</button>
+              <Link className="border-solid border-2 p-2 rounded-sm" href="/signup">Signup</Link> 
             </div>
           </form>
           <Separator/>
