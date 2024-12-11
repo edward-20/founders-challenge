@@ -17,7 +17,7 @@ export async function signup(formData: FormData) {
   console.log(data)
 
   const { error } = await supabase.auth.signUp(data)
-  console.log("hello")
+  
   console.log(error)
 
   if (error) {
