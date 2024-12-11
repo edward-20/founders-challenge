@@ -59,7 +59,7 @@ export default function Form() {
       >Your passwords must match.</div>
 
       <div className="flex flex-row gap-2 items-center">
-        <button type="submit" disabled={(passwords.password === passwords.confirmPassword) && passwords.password.length >= 10} className="border-solid border-2 border-slate-400 w-100 transition:all duration-300 hover:bg-slate-400 rounded-sm p-2">Submit</button>
+        <button type="submit" disabled={passwords.password !== passwords.confirmPassword || passwords.password.length < 10} className="border-solid border-2 border-slate-400 w-100 transition:all duration-300 hover:bg-slate-400 rounded-sm p-2 disabled:opacity-50 disabled:hover:bg-inherit">Submit</button>
         <p>or</p>
         <Link className="border-solid border-2 p-2 rounded-sm" href="/login">Login</Link>
       </div>

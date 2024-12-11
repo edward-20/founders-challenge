@@ -48,14 +48,10 @@ export async function updateSession(request: NextRequest) {
     user && 
     (request.nextUrl.pathname === "/login" || request.nextUrl.pathname === "/signup")
   ) {
-    console.log('here')
     const url = request.nextUrl.clone()
     url.pathname = '/dashboard'
     return NextResponse.redirect(url)
   }
-  console.log(user)
-  console.log('hello')
-  console.log(request.nextUrl.pathname)
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
   // creating a new response object with NextResponse.next() make sure to:
